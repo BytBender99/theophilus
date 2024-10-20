@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0,0.1);
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    text-decoration: none;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav a:hover{
+    background-color: #75757575;
+}
+nav .logo a{
+    font-family: jokerman;
+    color: blue;
+}
+nav span{
+    color: red;
+}
+#toggle{
+    display: none;
+}
+
+.sidebar li:first-child{
+    margin: 0;
+}
+.sidebar{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(3px);
+    height: 150px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0,0.1);
+    transform: translateY(-135%);
+    transition: 0.3s ease all;
+}
+.sidebar li{
+    width: 100%;
+    border-top: 2px solid rgba(218, 215, 215, 0.205);
+}
+.sidebar a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    transition: 0.2s;
+    color: black;
+}
+.sidebar a:hover{
+    color: brown;
+}
+.sidebar.open{
+    transform: translateY(0);
+}
+
+@media(max-width:730px){
+    .hideOnMobile{
+        display: none;
+    }
+    #toggle{
+        display: flex;
+    }
+    #hide{
+        display: none;
+    }
+}
+
+/* END OF NAV-BAR STYLING*/
+
+header{
+    background-color:darkblue ;
+}
+
+header h1{
+    text-align: center;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+}
+header p{
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+.cap{
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+.cap p{
+    font-size: 18px;
+    padding: 5px 0;
+}
+button{
+    margin: 10px;
+    background: none;
+    padding: 5px;
+    border: none;
+    background-color: rgb(7, 108, 148);
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+button:hover{
+    background-color: darkblue;
+}
+.or{
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+footer{
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    background-color: rgb(11, 36, 36);
+    color: white;
+}
+.contacts{
+    margin: 50px auto;
+    text-align: left;
+}
+footer a{
+    color: greenyellow;
+    justify-content: space-between;
+    text-decoration: none;
+    padding:5px;
+}
+nav i{
+    position: absolute;
+    top: 19px;
+    color: orangered;
+}

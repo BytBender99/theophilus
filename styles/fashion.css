@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(211, 232, 250);
+}
+nav{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0,0.1);
+}
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    text-decoration: none;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav a:hover{
+    background-color: #75757575;
+}
+nav .logo a{
+    font-family: jokerman;
+    color: blue;
+}
+nav span{
+    color: red;
+}
+#toggle{
+    display: none;
+}
+
+.sidebar li:first-child{
+    margin: 0;
+}
+.sidebar{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    backdrop-filter: blur(3px);
+    height: 150px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0,0.1);
+    transform: translateY(-135%);
+    transition: 0.3s ease all;
+}
+.sidebar li{
+    width: 100%;
+    border-top: 2px solid rgba(218, 215, 215, 0.205);
+}
+.sidebar a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    transition: 0.2s;
+    color: black;
+}
+.sidebar a:hover{
+    color: brown;
+}
+.sidebar.open{
+    transform: translateY(0);
+}
+
+
+@media(max-width:730px){
+    .hideOnMobile{
+        display: none;
+    }
+    #toggle{
+        display: flex;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #hide{
+        display: none;
+    }
+}
+header{
+    text-align: center;
+    font-family: mv system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    display: flex ;
+    margin:50px auto;
+
+}
+article{
+    background-color: white;
+    text-align: center;
+    font-family: sans-serif;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0,0.2);
+    border-radius: 3px;
+    margin: 50px auto;
+}
+article img{
+    height: 200px;
+    width: 250px;
+}
+button{
+    padding:4px 35px;
+    background: none;
+    border: none;
+    background-color:blueviolet;
+    margin: 5px;
+    border-radius: 5px;
+}
+button a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.4s ease all;
+}
+button:hover{
+    background-color: green;
+}
+footer{
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    background-color: rgb(11, 36, 36);
+    color: white;
+}
+.contacts{
+    margin: 50px auto;
+    text-align: left;
+}
+footer a{
+    color: greenyellow;
+    justify-content: space-between;
+    text-decoration: none;
+    padding:5px;
+}
+nav i{
+    position: absolute;
+    top: 19px;
+    color: orangered;
+}
+.discount{
+    text-align: center;
+}
+.btn{
+    background-color:crimson;
+    color: white;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: blue;
+}
+.home{
+    text-align: center;
+}
+.home a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: green;
+}
